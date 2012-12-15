@@ -11,11 +11,12 @@ composerとphp5.3以上
 
 ```
 git clone git://github.com/egmc/angel-images.git
+cd angel-images
 composer install
-php angel-images.php
+php angel_images.php
 ```
 
 ## その他
 
-Goutteでログインが必要なページでアレコレするテスト。
+Goutteでログインが必要なページでアレコレするテスト。 
 無茶しないでね。
