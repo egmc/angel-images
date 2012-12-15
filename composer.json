@@ -1,0 +1,13 @@
+{
+    "name": "egmc/angel-images",
+    "description": "download images from ANGEL EYES",
+    "require": {
+        "fabpot/goutte": "v0.1.0"
+    },
+    "authors": [
+        {
+            "name": "egmc",
+            "email": "waltz4debby@eg2mix.com"
+        }
+    ]
+}
