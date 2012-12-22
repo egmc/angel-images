@@ -43,17 +43,19 @@ foreach ($report_entry_urls as $report_entry_url) {
 	$crawler = $client->request('GET',  $fc_url_prefix . $report_entry_url);
 	$image_urls = $crawler->filter('ul#photoList li a')->extract('href');
 	foreach ($image_urls as $image_url) {
-		$crawler = $client->request('GET',  $fc_url_prefix . $image_url);
-		$response = $client->getResponse();
-		//var_dump($content->getContent());
-		//break;
 		$filename = pathinfo($image_url, PATHINFO_BASENAME);
 		$save_path = $target_dir . "/" . $filename;
 		if(file_exists($save_path)) {
 			echo "$save_path::already exists\n";
 		} else {
-			file_put_contents($save_path, $response->getContent());
-			echo "$save_path::saved\n";
+			$crawler = $client->request('GET',  $fc_url_prefix . $image_url);
+			$response = $client->getResponse();
+			if ($response) {
+				file_put_contents($save_path, $response->getContent());
+				echo "$save_path::saved\n";
+			} else {
+				echo "$save_path::image get failed\n";
+			}
 		}
 	}
 }
