@@ -8,13 +8,17 @@ A
 
 composerとphp5.3以上
 
-## usage
+## installation
 
 ```
 git clone git://github.com/egmc/angel-images.git
 cd angel-images
 composer install
-php angel_images.php
+```
+
+## usage
+```
+php angel_images.php {id} {password} [target_dir]
 ```
 
 ## その他
