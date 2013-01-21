@@ -5,7 +5,7 @@ image downloader for ANGEL EYES photo report
 
 ## require
 
-composerとphp5.3以上
+php5.3以上
 
 ## installation
 
