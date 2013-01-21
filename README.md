@@ -13,7 +13,8 @@ composerとphp5.3以上
 ```
 git clone git://github.com/egmc/angel-images.git
 cd angel-images
-composer install
+curl -s https://getcomposer.org/installer | php
+php composer.phar install
 ```
 
 ## usage
