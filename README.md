@@ -2,7 +2,6 @@ angel-images
 ============
 
 image downloader for ANGEL EYES photo report
-A
 
 ## require
 
