@@ -2,7 +2,8 @@
     "name": "egmc/angel-images",
     "description": "download images from ANGEL EYES",
     "require": {
-        "fabpot/goutte": "v0.1.0"
+        "fabpot/goutte": "v0.1.0",
+        "symfony/event-dispatcher" : "~2.7"
     },
     "authors": [
         {
